@@ -1,27 +1,18 @@
-package bancopostgres;
+package GUI;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-import com.jgoodies.forms.factories.FormFactory;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextField;
 import java.awt.Panel;
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+import javax.swing.JTextField;
 import javax.swing.JTextPane;
+import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class janelaBanco extends JFrame {
 	private JTextField colunaJogadores;
