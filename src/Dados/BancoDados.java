@@ -52,7 +52,7 @@ public class BancoDados {
 	        rs = pst.executeQuery();
 	
 	        while (rs.next()) {
-	            tabela += String.format("%-18s%-15s%-3d%-3d%-15s%-23s%-24s\n", 
+	            tabela += String.format("|%-17s|%14s|%1dx%1d|%-14s|%-22s|%-22s|\n", 
 	            		rs.getString(1), 
 	            		rs.getString(2), 
 	            		rs.getInt(3),

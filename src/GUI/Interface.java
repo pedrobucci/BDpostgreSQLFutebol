@@ -60,14 +60,14 @@ public class Interface extends JFrame {
 	 */
 	public Interface() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 667, 406);
+		setBounds(100, 100, 770, 406);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(0, 0, 651, 367);
+		tabbedPane.setBounds(0, 0, 754, 367);
 		contentPane.add(tabbedPane);
 		
 		JPanel panel = new JPanel();
@@ -222,8 +222,8 @@ public class Interface extends JFrame {
 		panel_3.setLayout(null);
 		
 		JTextPane tabelaJogos = new JTextPane();
-		tabelaJogos.setBounds(10, 46, 626, 282);
-		//tabelaJogos.setFont(new Font("Calibri", ));
+		tabelaJogos.setBounds(10, 46, 729, 282);
+		tabelaJogos.setFont(new Font("monospaced", Font.PLAIN, 12));
 		panel_3.add(tabelaJogos);
 		
 		JButton btnNewButton_4 = new JButton("Gerar tabela");
