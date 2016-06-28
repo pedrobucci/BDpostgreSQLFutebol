@@ -71,7 +71,7 @@ public class Interface extends JFrame {
 		contentPane.add(tabbedPane);
 		
 		JPanel panel = new JPanel();
-		tabbedPane.addTab("Seleções", null, panel, null);
+		tabbedPane.addTab("Selecoes", null, panel, null);
 		panel.setLayout(null);
 		
 		textField = new JTextField();
@@ -103,21 +103,21 @@ public class Interface extends JFrame {
 		textPane.setBounds(10, 48, 523, 188);
 		panel.add(textPane);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(10, 247, 89, 23);
-		panel.add(btnNewButton);
+		JButton bBuscarSelecoes = new JButton("Buscar");
+		bBuscarSelecoes.setBounds(10, 247, 89, 23);
+		panel.add(bBuscarSelecoes);
 		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.setBounds(106, 247, 89, 23);
-		panel.add(btnNewButton_1);
+		JButton bAdicionarSelecoes = new JButton("Adicionar");
+		bAdicionarSelecoes.setBounds(106, 247, 89, 23);
+		panel.add(bAdicionarSelecoes);
 		
-		JButton btnNewButton_2 = new JButton("New button");
-		btnNewButton_2.setBounds(202, 247, 89, 23);
-		panel.add(btnNewButton_2);
+		JButton bDeletarSelecoes = new JButton("Deletar");
+		bDeletarSelecoes.setBounds(202, 247, 89, 23);
+		panel.add(bDeletarSelecoes);
 		
-		JButton btnNewButton_3 = new JButton("New button");
-		btnNewButton_3.setBounds(298, 247, 89, 23);
-		panel.add(btnNewButton_3);
+		JButton bAtualizarSelecoes = new JButton("Atualizar");
+		bAtualizarSelecoes.setBounds(298, 247, 89, 23);
+		panel.add(bAtualizarSelecoes);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setLayout(null);
@@ -152,25 +152,25 @@ public class Interface extends JFrame {
 		textPane_1.setBounds(10, 48, 523, 188);
 		panel_1.add(textPane_1);
 		
-		JButton button = new JButton("New button");
-		button.setBounds(10, 247, 89, 23);
-		panel_1.add(button);
+		JButton bBuscarJogadores = new JButton("Buscar");
+		bBuscarJogadores.setBounds(10, 247, 89, 23);
+		panel_1.add(bBuscarJogadores);
 		
-		JButton button_1 = new JButton("New button");
-		button_1.setBounds(106, 247, 89, 23);
-		panel_1.add(button_1);
+		JButton bAdicionarJogadores = new JButton("Adicionar");
+		bAdicionarJogadores.setBounds(106, 247, 89, 23);
+		panel_1.add(bAdicionarJogadores);
 		
-		JButton button_2 = new JButton("New button");
-		button_2.setBounds(202, 247, 89, 23);
-		panel_1.add(button_2);
+		JButton bDeletarJogadores = new JButton("Deletar");
+		bDeletarJogadores.setBounds(202, 247, 89, 23);
+		panel_1.add(bDeletarJogadores);
 		
-		JButton button_3 = new JButton("New button");
-		button_3.setBounds(298, 247, 89, 23);
-		panel_1.add(button_3);
+		JButton bAtualizarJogadores = new JButton("Atualizar");
+		bAtualizarJogadores.setBounds(298, 247, 89, 23);
+		panel_1.add(bAtualizarJogadores);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
-		tabbedPane.addTab("Técnicos", null, panel_2, null);
+		tabbedPane.addTab("Tecnicos", null, panel_2, null);
 		
 		textField_10 = new JTextField();
 		textField_10.setColumns(10);
@@ -201,21 +201,21 @@ public class Interface extends JFrame {
 		textPane_2.setBounds(10, 48, 523, 188);
 		panel_2.add(textPane_2);
 		
-		JButton button_4 = new JButton("New button");
-		button_4.setBounds(10, 247, 89, 23);
-		panel_2.add(button_4);
+		JButton bBuscarTecnicos = new JButton("Buscar");
+		bBuscarTecnicos.setBounds(10, 247, 89, 23);
+		panel_2.add(bBuscarTecnicos);
 		
-		JButton button_5 = new JButton("New button");
-		button_5.setBounds(106, 247, 89, 23);
-		panel_2.add(button_5);
+		JButton bAdicionarTecnicos = new JButton("Adicionar");
+		bAdicionarTecnicos.setBounds(106, 247, 89, 23);
+		panel_2.add(bAdicionarTecnicos);
 		
-		JButton button_6 = new JButton("New button");
-		button_6.setBounds(202, 247, 89, 23);
-		panel_2.add(button_6);
+		JButton bDeletarTecnicos = new JButton("Deletar");
+		bDeletarTecnicos.setBounds(202, 247, 89, 23);
+		panel_2.add(bDeletarTecnicos);
 		
-		JButton button_7 = new JButton("New button");
-		button_7.setBounds(298, 247, 89, 23);
-		panel_2.add(button_7);
+		JButton bAtualizarTecnicos = new JButton("Atualizar");
+		bAtualizarTecnicos.setBounds(298, 247, 89, 23);
+		panel_2.add(bAtualizarTecnicos);
 		
 		JPanel panel_3 = new JPanel();
 		tabbedPane.addTab("Jogos", null, panel_3, null);
@@ -223,7 +223,7 @@ public class Interface extends JFrame {
 		
 		JTextPane tabelaJogos = new JTextPane();
 		tabelaJogos.setBounds(10, 46, 626, 282);
-		tabelaJogos.setFont(new Font("Calibri", ));
+		//tabelaJogos.setFont(new Font("Calibri", ));
 		panel_3.add(tabelaJogos);
 		
 		JButton btnNewButton_4 = new JButton("Gerar tabela");
@@ -240,7 +240,7 @@ public class Interface extends JFrame {
 	private class SwingAction extends AbstractAction {
 		public SwingAction() {
 			putValue(NAME, "Gerar tabela");
-			putValue(SHORT_DESCRIPTION, "Gerar tabela de jogos de futebol das Olimpíadas.");
+			putValue(SHORT_DESCRIPTION, "Gerar tabela de jogos de futebol das Olimpiadas.");
 		}
 		public void actionPerformed(ActionEvent e) {
 		}
