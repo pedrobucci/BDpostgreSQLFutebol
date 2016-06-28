@@ -52,10 +52,14 @@ public class BancoDados {
 	        rs = pst.executeQuery();
 	
 	        while (rs.next()) {
-	            //System.out.print(rs.getString(2) + "\t");
-	            //System.out.println(rs.getString(4) + "\n");
-	            tabela += rs.getString(2) + "\t";
-	            tabela += rs.getString(4) + "\n";
+	            tabela += String.format("%-18s%-15s%-3d%-3d%-15s%-23s%-24s\n", 
+	            		rs.getString(1), 
+	            		rs.getString(2), 
+	            		rs.getInt(3),
+	            		rs.getInt(4),
+	            		rs.getString(5),
+	            		rs.getString(6),
+	            		rs.getString(7));
 	        }
 	
 	    } catch (SQLException ex) {
