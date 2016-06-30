@@ -31,11 +31,11 @@ insert into Rodada (nome) values ('Semifinais');
 insert into Rodada (nome) values ('Disputa do Bronze');
 insert into Rodada (nome) values ('Final');
 
-insert into Centro_Olimpico (nome, id_cidade) values ('Pele', 1);
-insert into Centro_Olimpico (nome, id_cidade) values ('Dunga', 2); 
-insert into Centro_Olimpico (nome, id_cidade) values ('Mane Garrincha', 3); 
-insert into Centro_Olimpico (nome, id_cidade) values ('Chaves', 4); 
-insert into Centro_Olimpico (nome, id_cidade) values ('Vila Nova', 5); 
+insert into Centro_Olimpico (nome, endereco, id_cidade) values ('Pele', 'Bairro Bom Jardim, 321', 1);
+insert into Centro_Olimpico (nome, endereco, id_cidade) values ('Dunga', 'Rua da mata, 143', 2); 
+insert into Centro_Olimpico (nome, endereco, id_cidade) values ('Mane Garrincha', 'Vila Planalto, QL 22', 3); 
+insert into Centro_Olimpico (nome, endereco, id_cidade) values ('Chaves', 'Bairro do Axé, 564', 4); 
+insert into Centro_Olimpico (nome, endereco, id_cidade) values ('Vila Nova', 'Vila do O, 83', 5); 
 
 insert into Selecao (pais, pontos, foto_equipe, id_centro_olimpico, id_continente) values('Brasil', 0, '0', 1, 1);
 insert into Selecao (pais, pontos, foto_equipe, id_centro_olimpico, id_continente) values('Estados Unidos', 0, '0', 2, 1);
@@ -83,10 +83,10 @@ insert into Patrocinador (nome, id_selecao) values ('McLaren', 3);
 insert into Patrocinador (nome, id_selecao) values ('Bradesco', 1);
 
 insert into premiacao (categoria, id_selecao) values ('Ouro', 1);
-insert into premiacao (categoria, id_selecao) values ('Prata', 4);
-insert into premiacao (categoria, id_selecao) values ('Bronze', 5);
+insert into premiacao (categoria, id_selecao) values ('Prata', 3);
+insert into premiacao (categoria, id_selecao) values ('Bronze', 2);
 insert into premiacao (categoria, id_selecao) values ('Artilheiro', 1);
-insert into premiacao (categoria, id_selecao) values ('Melhor Jogador', 2);
+insert into premiacao (categoria, id_selecao) values ('Melhor Jogador', 4);
 
 insert into partida (data_hora ,placarA ,placarB ,id_rodada ,id_juiz ,id_estadio ,id_selecaoA ,id_selecaoB)
 	values ('20-08-2016 20:00:00-03', 3, 2, 4, 1, 6, 1, 3);

@@ -35,6 +35,7 @@ CREATE TABLE Estadio (
 create table Centro_Olimpico (
 	id serial PRIMARY KEY,
 	nome varchar(50) not null,
+	endereco varchar(100) not null,
 	id_cidade int not null,
 	FOREIGN KEY(id_cidade) REFERENCES Cidade (id)
 );
@@ -140,3 +141,25 @@ CREATE VIEW tabela_de_jogos as
 		and	partida.id_selecaoB = selecaoB.id
 		and	partida.id_estadio = estadio.id;
 
+create function atualiza_pontos () returns trigger as $atualiza_pontos$
+	begin
+		if new.placarA > new.placarB then
+			--ponto para A
+			update selecao set pontos = pontos + 3 where id = new.id_selecaoA;
+		end if;
+		if new.placarB > new.placarA then
+			--ponto para B
+			update selecao set pontos = pontos + 3 where id = new.id_selecaoB;
+		end if;
+		if new.placarA = new.placarB then
+			--empate
+			update selecao set pontos = pontos + 1 where id = new.id_selecaoA;
+			update selecao set pontos = pontos + 1 where id = new.id_selecaoB;
+		end if;
+		return new;
+	end;
+$atualiza_pontos$ language plpgsql;
+
+CREATE TRIGGER atualiza_pontos
+AFTER INSERT ON partida
+    FOR EACH ROW EXECUTE PROCEDURE atualiza_pontos();
